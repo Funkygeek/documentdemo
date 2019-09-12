@@ -21,7 +21,14 @@
       </div>
 
       <div class="form-group">
-        <button class="btn btn-primary"  (click)="onSubmit(token.value)">Submit</button>
+        <button class="btn btn-primary"  (click)="onSubmitUpload(token.value)">Upload</button>
+      </div>
+      <div class="form-group">
+        <label for="filename">FileName</label>
+        <input #filename  id="filename"  />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary"  (click)="onSubmitDownload(token.value, filename.value)">Download</button>
       </div>
     </div>
   </div>
